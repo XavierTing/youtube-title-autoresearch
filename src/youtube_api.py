@@ -1,5 +1,7 @@
 """YouTube Data API v3 and YouTube Analytics API wrapper."""
 
+from __future__ import annotations
+
 import os
 from datetime import datetime, timedelta
 

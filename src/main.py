@@ -7,6 +7,8 @@ Designed to be called hourly by GitHub Actions. Each invocation:
 4. Logs everything to results.tsv and commits back to the repo
 """
 
+from __future__ import annotations
+
 import os
 import subprocess
 import sys

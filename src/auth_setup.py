@@ -10,6 +10,8 @@ Usage:
     4. Copy the printed refresh_token into your GitHub repo secrets
 """
 
+from __future__ import annotations
+
 import json
 import os
 import tempfile

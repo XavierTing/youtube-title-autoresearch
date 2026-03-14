@@ -1,5 +1,7 @@
 """Experiment results tracking and evaluation logic."""
 
+from __future__ import annotations
+
 import csv
 import os
 from datetime import datetime, timezone

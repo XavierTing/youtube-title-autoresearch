@@ -1,5 +1,7 @@
 """Claude API integration for generating optimized YouTube titles."""
 
+from __future__ import annotations
+
 import os
 
 import anthropic
