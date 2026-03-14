@@ -137,7 +137,7 @@ def main() -> None:
         })
         print(f"  Baseline title: \"{video_info['title']}\"")
         print("  Waiting 72h for analytics data before first evaluation.")
-        commit_and_push_results()
+        # Git commit/push is handled by the GitHub Actions workflow step
         return
 
     # --- Propose and set a new title ---
@@ -172,7 +172,7 @@ def main() -> None:
         "description": strategy,
     })
 
-    commit_and_push_results()
+    # Git commit/push is handled by the GitHub Actions workflow step
     print("Done. Next check in 1 hour.")
 
 

@@ -5,6 +5,9 @@ on:
     - cron: '0 * * * *'  # Every hour
   workflow_dispatch: {}    # Manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   experiment:
     runs-on: ubuntu-latest
@@ -32,5 +35,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add results.tsv
-          git diff --cached --quiet || git commit -m "Update experiment results"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "Update experiment results"
+            git push
+          else
+            echo "No changes to commit."
+          fi
