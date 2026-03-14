@@ -7,7 +7,7 @@ import os
 from datetime import datetime, timezone
 
 RESULTS_FILE = "results.tsv"
-EVALUATION_HOURS = 72  # Hours to wait before evaluating an experiment
+EVALUATION_HOURS = 24  # Hours to wait before evaluating an experiment
 
 FIELDNAMES = [
     "timestamp",

@@ -136,7 +136,7 @@ def main() -> None:
             "description": "baseline — original title",
         })
         print(f"  Baseline title: \"{video_info['title']}\"")
-        print("  Waiting 72h for analytics data before first evaluation.")
+        print("  Waiting 24h for analytics data before first evaluation.")
         # Git commit/push is handled by the GitHub Actions workflow step
         return
 
